@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;500;700&display=swap" rel="stylesheet">
+  <title>Survey Form</title>
+</head>
+
+<body>
+
+  <header>
+    <h1 id="title">Reading Habits Survey</h1>
+    <p id="description">Survey to gather information about your reading habits</p>
+  </header>
+
+  <main id="container">
+    <form id="survey-form" action="index.html" method="post">
+      <label for="name" id="name-label">Name: </label><br>
+      <input type="text" required id="name" name="name" placeholder="Enter your name here..."><br>
+      <label for="email" id="email-label">Email: </label><br>
+      <input type="email" required id="email" name="email" placeholder="Enter your email here..."><br>
+      <label for="age" id="number-label">Age: </label><br>
+      <input type="number" required min="1" max="99" id="number" name="age" placeholder="Enter your age here..."><br>
+
+      <label for="gender">Choose your gender:</label><br>
+      <select name="cars" id="dropdown"><br>
+        <option value=""></option>
+        <option value="female">Female</option>
+        <option value="male">Male</option>
+        <option value="other">Other</option>
+      </select><br>
+
+<section id="questions">
+      <div>
+        <label for="question">You are used to reading in your free time?</label><br>
+        <input type="radio" id="everyday" name="question" value="everyday">
+        <label for="everyday">Everyday</label><br>
+        <input type="radio" id="once_or_twice_a_week" name="question" value="once_or_twice_a_week">
+        <label for="once_or_twice_a_week">Once or twice a week</label><br>
+        <input type="radio" id="hardly_ever" name="question" value="hardly_ever">
+        <label for="hardly_ever">Hardly ever</label><br>
+      </div>
+      <br><br>
+      <div>
+        <label for="question">You are used to reading in your free time?</label><br>
+        <input type="radio" id="everyday" name="question" value="everyday">
+        <label for="everyday">Everyday</label><br>
+        <input type="radio" id="once_or_twice_a_week" name="question" value="once_or_twice_a_week">
+        <label for="once_or_twice_a_week">Once or twice a week</label><br>
+        <input type="radio" id="hardly_ever" name="question" value="hardly_ever">
+        <label for="hardly_ever">Hardly ever</label><br>
+      </div>
+      <br><br>
+      <div>
+  <label for=" question">How many books did you read last year or so?</label><br>
+        <input type="radio" id="one_book" name="question" value="one_book">
+        <label for="one_book">One book</label><br>
+        <input type="radio" id="from_2_to_4_books" name="question" value="from_2_to_4_books">
+        <label for="from_2_to_4_books">From 2 to 4 books</label><br>
+        <input type="radio" id="more_than_ten" name="question" value="more_than_ten">
+        <label for="more_than_ten">More than ten</label><br>
+      </div>
+      <br><br>
+      <div>
+        <label for="question">Are you reading a book right now?</label><br>
+        <input type="radio" id="yes" name="question" value="yes">
+        <label for="yes">Yes</label><br>
+        <input type="radio" id="no" name="question" value="no">
+        <label for="no">No</label><br>
+      </div>
+      <br><br>
+</section>
+<section id="options">
+  <label for="literary_genres">Indicates which of the following literary genres you like: </label><br>
+  <input type="checkbox" id="poetry" name="literary_genres" value="literary_genres">
+  <label for="poetry">Poetry</label><br>
+  <input type="checkbox" id="adventure" name="literary_genres" value="literary_genres">
+  <label for="adventure">Adventure</label><br>
+  <input type="checkbox" id="science_fiction" name="literary_genres" value="literary_genres">
+  <label for="science_fiction">Science Fiction</label><br>
+  <input type="checkbox" id="story" name="literary_genres" value="literary_genres">
+  <label for="story">Story</label><br>
+  <input type="checkbox" id="romantic_novel" name="literary_genres" value="literary_genres">
+  <label for="romantic_novel">Romantic Novel</label><br>
+  <input type="checkbox" id="biography" name="literary_genres" value="literary_genres">
+  <label for="biography">Biography</label><br>
+</section>
+<br><br>
+<section id="comments">
+  <label for="comments">In case you had one, who is your favorite author and which of his books you liked best? </label><br>
+  <textarea id="comments" name="comments" rows="8" cols="40" placeholder="Tell us about him/her here..."></textarea>
+</section>
+<br>
+
+      <button type="submit" id="submit" name="button">Submit</button>
+    </form>
+  </main>
+</body>
+
+</html>
